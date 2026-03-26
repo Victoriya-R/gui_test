@@ -1,0 +1,51 @@
+{
+  "name": "basis-gui-tests",
+  "version": "1.0.0",
+  "description": "GUI tests",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:runChrome": "cypress run --browser chrome",
+    "all": "cypress run --spec 'cypress/e2e/**/*'",
+    "core": "cypress run --spec 'cypress/e2e/core/**/*'",
+    "core:login": "cypress run --spec 'cypress/e2e/core/login.cy.js' --browser chrome",
+    "core:mandant": "cypress run --spec 'cypress/e2e/core/mandant.cy.js'",
+    "core:module": "cypress run --spec 'cypress/e2e/core/module.cy.js'",
+    "core:object": "cypress run --spec 'cypress/e2e/core/object.cy.js'",
+    "modules": "cypress run --spec 'cypress/e2e/modules/**/*'",
+    "nav": "cypress run --browser chrome --spec 'cypress/e2e/modules/1-base-4-nav/**/*'",
+    "nav:search": "cypress run --browser chrome --spec 'cypress/e2e/modules/1-base-4-nav/1-base-4-nav-1-search-oblects/**/*'",
+    "nav:searchIn": "cypress run --browser chrome --spec 'cypress/e2e/modules/1-base-4-nav/1-base-4-nav-2-search-in-zone/**/*'",
+    "nav:zonesMng": "cypress run --browser chrome --spec 'cypress/e2e/modules/1-base-4-nav/1-base-4-nav-3-zone-manage/**/*'",
+    "nav:devMng": "cypress run --browser chrome --spec 'cypress/e2e/modules/1-base-4-nav/1-base-4-nav-4-devices-manage/**/*'",
+    "nav:devMngFrm": "cypress run --browser chrome --spec 'cypress/e2e/modules/1-base-4-nav/1-base-4-nav-4-devices-manage/1-base-4-nav-4-1-check-forms.cy.js'",
+    "nav:devMngSrch": "cypress run --browser chrome --spec 'cypress/e2e/modules/1-base-4-nav/1-base-4-nav-4-devices-manage/1-base-4-nav-4-2-check-search.cy.js'",
+    "nav:devMngPlace": "cypress run --browser chrome --spec 'cypress/e2e/modules/1-base-4-nav/1-base-4-nav-4-devices-manage/1-base-4-nav-4-4-check-place.cy.js'",
+    "nav:devMngAssembly": "cypress run --browser chrome --spec 'cypress/e2e/modules/1-base-4-nav/1-base-4-nav-4-devices-manage/1-base-4-nav-4-5-assembly-mgt.cy.js'",
+    "nav:devMngLogGroups": "cypress run --browser chrome --spec 'cypress/e2e/modules/1-base-4-nav/1-base-4-nav-4-devices-manage/1-base-4-nav-4-6-logic-group.cy.js'",
+    "nav:devMngChangeType": "cypress run --browser chrome --spec 'cypress/e2e/modules/1-base-4-nav/1-base-4-nav-4-devices-manage/1-base-4-nav-4-7-change-type.cy.js'",
+    "nav:devMngChangeObj": "cypress run --browser chrome --spec 'cypress/e2e/modules/1-base-4-nav/1-base-4-nav-4-devices-manage/1-base-4-nav-4-8-change-objects.cy.js'",
+    "warehouses": "cypress run --spec 'cypress/e2e/warehouses/**/*'",
+    "warehouses:general": "cypress run --spec 'cypress/e2e/warehouses/general.cy.js'",
+    "lcm": "cypress run --browser chrome --spec 'cypress/e2e/modules/lcm/**/*'",
+    "lcm:eventlog": "cypress run --browser chrome --spec 'cypress/e2e/modules/lcm/eventlog/**/*'",
+    "lcm:events": "cypress run --browser chrome --spec 'cypress/e2e/modules/lcm/eventlog/event/**/*'",
+    "lcm:eventChange": "cypress run --browser chrome --spec 'cypress/e2e/modules/lcm/eventlog/event/change/**/*'"
+  },
+  "keywords": [
+    "basis",
+    "btob"
+  ],
+  "author": "Alexandre Seryakov",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "12.12.0",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.3.0"
+  },
+  "dependencies": {
+    "axios": "^1.13.6",
+    "xml2js": "^0.6.2"
+  }
+}

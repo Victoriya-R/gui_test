@@ -1,0 +1,8 @@
+# Default ignored files
+/.idea
+/node_modules/
+/cypress/screenshots
+/cypress/videos
+/mochawesome-report
+/results
+probe-run.js
